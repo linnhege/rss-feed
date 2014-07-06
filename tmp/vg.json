@@ -1,0 +1,147 @@
+{"query":{
+    "count":1,
+    "created":"2014-07-03T11:10:26Z",
+    "lang":"nb-no",
+    "diagnostics":{
+        "publiclyCallable":"true",
+        "url":{
+            "execution-start-time":"0",
+            "execution-stop-time":"465",
+            "execution-time":"465",
+            "content":"http://www.vg.no/rss/feed/forsiden/"
+        },
+        "user-time":"466",
+        "service-time":"465",
+        "build-version":"0.2.2602"
+    },
+    "results":{
+        "rss":{
+            "version":"2.0",
+            "vg":"http://www.vg.no/namespace",
+            "channel":{
+                "image":{
+                    "title":"VG RSS",
+                    "url":"http://static.vg.no/leonora/gfk/front/vglogo.gif",
+                    "link":"http://www.vg.no"
+                },
+                "title":"VG RSS",
+                "ttl":"10",
+                "description":"VG RSS",
+                "link":"http://www.vg.no/rss/feed/forsiden/",
+                "lastBuildDate":"Thu, 03 Jul 2014 13:03:00 +0200",
+                "item":[
+                    {
+                        "title":"Bilfører siktet for uaktsomt drap",
+                        "description":null,
+                        "link":"http://www.vg.no/nyheter/innenriks/bilfoerer-siktet-for-uaktsomt-drap/a/23245859/",
+                        "guid":"http://www.vg.no/a/23245859/",
+                        "waplink":"http://www.vg.no/nyheter/innenriks/bilfoerer-siktet-for-uaktsomt-drap/a/23245859/",
+                        "img":null,
+                        "articleImg":null,
+                        "body":null,
+                        "pubDate":"Thu, 03 Jul 2014 12:23:16 +0200"
+                    },
+                    {
+                        "title":"Servitører må betale når gjester stikker fra regningen",
+                        "description":null,
+                        "link":"http://www.vg.no/nyheter/innenriks/lo/servitoerer-maa-betale-naar-gjester-stikker-fra-regningen/a/23245820/",
+                        "guid":"http://www.vg.no/a/23245820/",
+                        "waplink":"http://www.vg.no/nyheter/innenriks/lo/servitoerer-maa-betale-naar-gjester-stikker-fra-regningen/a/23245820/",
+                        "img":null,
+                        "articleImg":null,
+                        "body":null,
+                        "pubDate":"Thu, 03 Jul 2014 11:56:06 +0200"
+                    },
+                    {
+                        "title":"Her har Aksel Ronaldos kjæreste i armene",
+                        "description":null,
+                        "link":"http://www.vg.no/rampelys/hollywood/her-holder-aksel-rundt-ronaldos-kjaereste/a/23245765/",
+                        "guid":"http://www.vg.no/a/23245765/",
+                        "waplink":"http://www.vg.no/rampelys/hollywood/her-holder-aksel-rundt-ronaldos-kjaereste/a/23245765/",
+                        "img":null,
+                        "articleImg":null,
+                        "body":null,
+                        "pubDate":"Thu, 03 Jul 2014 11:50:09 +0200"
+                    },
+                    {
+                        "title":"Røde Kors: - Samtaler med ISIL har hjulpet oss inn",
+                        "description":null,
+                        "link":"http://www.vg.no/nyheter/utenriks/syria/roede-kors-samtaler-med-isil-har-hjulpet-oss-inn/a/23245803/",
+                        "guid":"http://www.vg.no/a/23245803/",
+                        "waplink":"http://www.vg.no/nyheter/utenriks/syria/roede-kors-samtaler-med-isil-har-hjulpet-oss-inn/a/23245803/",
+                        "img":null,
+                        "articleImg":null,
+                        "body":null,
+                        "pubDate":"Thu, 03 Jul 2014 12:11:24 +0200"
+                    },
+                    {
+                        "title":"Messi: - Hele laget er i sjokk",
+                        "description":null,
+                        "link":"http://www.vg.no/sport/fotball/fotball-vm-2014/messi-hele-laget-er-i-sjokk/a/23245753/",
+                        "guid":"http://www.vg.no/a/23245753/",
+                        "waplink":"http://www.vg.no/sport/fotball/fotball-vm-2014/messi-hele-laget-er-i-sjokk/a/23245753/",
+                        "img":null,
+                        "articleImg":null,
+                        "body":null,
+                        "pubDate":"Thu, 03 Jul 2014 12:37:43 +0200"
+                    },
+                    {
+                        "title":"Denne el-bilen danker ut Tesla i USA",
+                        "description":null,
+                        "link":"http://e24.no/bil/denne-el-bilen-danker-ut-tesla-i-usa/23245663",
+                        "guid":"http://e24.no/bil/denne-el-bilen-danker-ut-tesla-i-usa/23245663",
+                        "waplink":"http://e24.no/bil/denne-el-bilen-danker-ut-tesla-i-usa/23245663",
+                        "img":null,
+                        "articleImg":null,
+                        "body":null,
+                        "pubDate":"Thu, 03 Jul 2014 11:21:39 +0200"
+                    },
+                    {
+                        "title":"Festivalmoten på Hove: - Ikke så fan av «truseshortsene»",
+                        "description":null,
+                        "link":"http://www.vg.no/a/23245762/",
+                        "guid":"http://www.vg.no/a/23245762/",
+                        "waplink":"http://www.vg.no/a/23245762/",
+                        "img":null,
+                        "articleImg":null,
+                        "body":null,
+                        "pubDate":"Thu, 03 Jul 2014 12:47:26 +0200"
+                    },
+                    {
+                        "title":"Krever at europeisk ungdom får mer støtte fra Lånekassen",
+                        "description":null,
+                        "link":"http://www.vg.no/nyheter/innenriks/skole-og-utdanning/krever-at-europeisk-ungdom-faar-mer-stoette-fra-laanekassen/a/23245682/",
+                        "guid":"http://www.vg.no/a/23245682/",
+                        "waplink":"http://www.vg.no/nyheter/innenriks/skole-og-utdanning/krever-at-europeisk-ungdom-faar-mer-stoette-fra-laanekassen/a/23245682/",
+                        "img":null,
+                        "articleImg":null,
+                        "body":null,
+                        "pubDate":"Thu, 03 Jul 2014 12:42:51 +0200"
+                    },
+                    {
+                        "title":"Se Foppalls VM-lunsj",
+                        "description":null,
+                        "link":"http://direkte.vg.no/studio/vgsporten/#!videoId=84624",
+                        "guid":"http://direkte.vg.no/studio/vgsporten/#!videoId=84624",
+                        "waplink":"http://direkte.vg.no/studio/vgsporten/#!videoId=84624",
+                        "img":null,
+                        "articleImg":null,
+                        "body":null,
+                        "pubDate":"Thu, 03 Jul 2014 12:58:38 +0200"
+                    },
+                    {
+                        "title":"Walisisk miniputt håner Manchester United",
+                        "description":null,
+                        "link":"http://www.vgtv.no/#!id=84622",
+                        "guid":"http://www.vgtv.no/#!id=84622",
+                        "waplink":"http://www.vgtv.no/#!id=84622",
+                        "img":null,
+                        "articleImg":null,
+                        "body":null,
+                        "pubDate":"Thu, 03 Jul 2014 12:58:38 +0200"
+                    }
+                ]
+            }
+        }
+    }
+}

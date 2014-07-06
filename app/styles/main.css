@@ -1,79 +1,285 @@
-/* Space out content a bit */
+/*######## Global styling ########*/
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+    background-color: #EEEEEE;
+    color: #585858;
+    font: 14px "Lucida Grande",Helvetica,Arial,sans-serif;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container {
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+h2 {
+    color: #E00B04;
+    font-size: 19px;
+    font-weight: normal;
+    margin: 20px 50px 0;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+/*######## Header styling ########*/
 
-/* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    float: left;
+    height: 120px;
+    margin: 0 0 0 20%;
+    position: absolute;
+    width: 70%;
+    z-index: 2;
 }
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.header h1 {
+    margin: 43px 48px;
 }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+/*######## Navigation styling ########*/
+
+.nav {
+    background: none repeat scroll 0 0 #333333;
+    float: left;
+    height: 100%;
+    position: fixed;
+    width: 20%;
+    z-index: 5;
+    transition:all 400ms ease;
+    overflow: auto;
 }
-.container-narrow > hr {
-  margin: 30px 0;
+.nav ul li {
+    border-bottom: 1px solid #4D4D4D;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.nav ul li:last-child {
+    border-bottom: medium none;
+}
+.nav ul li:hover {
+    background-color: #3D3D3D;
+    transition: all 500ms ease;
+}
+.nav ul li.link {
+    cursor: pointer;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+.home-link {
+    position:relative;
+    display:block;
+    margin-top: 1.8em;
 }
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+.home-link img{
+    width: 106%;
+    margin:0;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.nav-slide-btn {
+    display: none;
+}
+
+/*######## Articles styling ########*/
+
+.updated {
+    color: #888888;
+    float: right;
+    font-size: 12px;
+    margin-right: 20px;
+    top: 20px;
+}
+a.title {
+    color: #E00B04;
+    float: left;
+    font-size: 19px;
+    text-decoration: none;
+    width: 100%;
+}
+.articleContent {
+    float: left;
+    margin-top: 10px;
+    width: 78%;
+}
+.thumb {
+    float: none;
+    margin: 0;
+    width: 100%;
+}
+div.description {
+    display: none;
+}
+.embed {
+    float: left;
+    margin: 10px 2% 0 0;
+    width: 20%;
+}
+.embed a {
+    display: none;
+}
+.embed a.provider {
+    display: none;
+}
+.embed a:hover {
+    color: #7c0904;
+    text-decoration: underline;
+}
+
+span.date {
+    color: #888888;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.wrapper {
+    background-color: #FFFFFF;
+    border-top: 1px solid #DDDDDD;
+    float: left;
+    margin: 0 0 0 20%;
+    min-height: 99%;
+    position: absolute;
+    width: 70%;
+    z-index: 1;
+}
+.content {
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+.content ul {
+    padding: 0 30px;
+}
+.content li {
+    border-bottom: 1px solid #DDDDDD;
+    list-style-type: decimal;
+    list-style-position:inside;
+    padding: 20px;
+}
+.content ul.articles li{
+    float: left;
+    list-style-position: outside;
+    list-style-type: none;
+    list-style-position: outside;
+    width: 100%;
+}
+.content li:last-child {
+    border-bottom: medium none;
+}
+
+/*######## Error styling ########*/
+
+.error {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 160px;
+}
+.error li{
+    list-style-position: outside;
+    list-style-type: circle;
+}
+
+/*######## Mobile styling ########*/
+
+@media (max-width: 767px) {
+    .wrapper {
+        margin: 0;
+        width: 100%;
+    }
+    .content ul {
+        padding: 0;
+    }
+    .updated {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        width: auto;
+        float: none;
+    }
+    .header{
+        margin: 0;
+        width: 100%;
+    }
+    .header h1 {
+        margin: 43px 20px;
+    }
+    h2 {
+        margin: 20px 20px 0;
+    }
+    .header .nav-slide-btn {
+        background:  url('../images/navButton.png') no-repeat;
+        background:  none, url('../images/navButton.svg') no-repeat, url('../images/navButton.png') no-repeat;
+        background-position:left top;
+        display: inline;
+        float: right;
+        margin-right: 43px;
+        margin-top: 35px;
+        padding: 22px 0 14px;
+        width: 54px;
+    }
+    .nav {
+        float: right;
+        right: -80%;
+        top: 0;
+        transition: all 400ms ease 0s;
+        width: 80%;
+    }
+    .nav ul {
+        margin: 80px 0 0;
+        padding: 0;
+    }
+    .nav img {
+        display: none;
+    }
+    .home-link {
+        display: none;
+    }
+    .nav .nav-slide-btn {
+        background:  url('../images/navButtonClose.png') no-repeat;
+        background:  none, url('../images/navButtonClose.svg') no-repeat, url('../images/navButtonClose.png') no-repeat;
+        background-position:left top;
+        display: inline;
+        float: left;
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        padding: 5px 0 14px;
+        width: 100%;
+        position: absolute;
+    }
+    .nav-slide-btn span{
+        visibility: hidden;
+    }
+    .menutransition {
+        right: 0 !important;
+    }
+}
+@media (max-width: 480px) {
+    .embed {
+        margin: 20px 0 0;
+        width: 100%;
+    }
+    .articleContent {
+        width: 100%;
+    }
+    .content li {
+        padding: 20px 10%;
+    }
+    a.title {
+        float: left;
+        width: 100%;
+    }
+
 }

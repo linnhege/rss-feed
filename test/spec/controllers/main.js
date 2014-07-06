@@ -1,35 +1,26 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
-
+describe('Controller: MainCtrl', function() {
     // load the controller's module
-    beforeEach(module('rssFeedApp'));
+    beforeEach(module('rssFeedApp', 'mockedFeed'));
 
-    var MainCtrl,
-        scope;
+    var MainCtrl, scope, mockedFeed, httpBackend;
 
     // Initialize the controller and a mock scope
-    beforeEach(inject(function ($controller, $rootScope) {
+    beforeEach(inject(function($controller, $rootScope, $httpBackend, defaultJSON) {
+        // Set up the expected feed data
+        httpBackend = $httpBackend;
+        $httpBackend.whenJSONP(/query.yahooapis.com/).respond(defaultJSON);
+
         scope = $rootScope.$new();
         MainCtrl = $controller('MainCtrl', {
-            $scope:scope
+            $scope: scope
         });
     }));
 
-    it('should have no items to start', function () {
-        expect(scope.todos.length).toBe(0);
-    });
-
-    it('should add items to the list', function () {
-        scope.todo = 'Test 1';
-        scope.addTodo();
-        expect(scope.todos.length).toBe(1);
-    });
-
-    it('should add then remove an item from the list', function () {
-        scope.todo = 'Test 1';
-        scope.addTodo();
-        scope.removeTodo(0);
-        expect(scope.todos.length).toBe(0);
+    it('should have a list of feeds', function() {
+        expect(scope.feeds.length).toBe(1);
+        httpBackend.flush();
+        expect(scope.feeds[0].items[0].title).toBe('Node Roundup: 0.11.2, 0.10.6, subscribe, Omelette');
     });
 });

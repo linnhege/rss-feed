@@ -1,26 +1,46 @@
-<div class="container">
-    <h2>My todos</h2>
-
-    <!-- Todos input -->
-    <form role="form" ng-submit="addTodo()">
-        <div class="row">
-            <div class="input-group">
-                <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
-        <span class="input-group-btn">
-          <input type="submit" class="btn btn-primary" value="Add">
+<div class="header">
+    <a href="#" class="nav-slide-btn">
+        <span>
+            Meny
         </span>
-            </div>
-        </div>
-    </form>
-    <p></p>
+    </a>
+    <h1>{{ title }}</h1>
+</div>
+<div class="nav">
+    <!--TODO: Fix responsive menu-->
+    <a href="#" class="nav-slide-btn">
+        <span>
+            Lukk
+        </span>
+    </a>
+    <ul>
+        <!--TODO: Look at options for dynamic content. Maybe MongoDB?-->
+        <li class="link" ng-click="fetchFeed('http://www.vg.no/rss/feed/forsiden/', 'rss', 'VG')">VG</li>
+        <li class="link" ng-click="fetchFeed('www.dagbladet.no/rss/nyheter/', 'rss', 'Dagbladet')">Dagbladet</li>
+        <li class="link" ng-click="fetchFeed('www.aftenposten.no/rss/', 'rss', 'Aftenposten')">Aftenposten</li>
+        <li class="link" ng-click="fetchFeed('www.dt.no/cmlink/dt-no-nyheter-1.2631162?localLinksEnabled=false', 'rss', 'Drammens Tidene')">Drammens Tidene</li>
+        <li class="link" ng-click="fetchFeed('www.t-a.no/?widgetName=polarisFeeds&widgetId=3103849&getXmlFeed=true', 'rss', 'Trønder-Avisa')">Trønder-Avisa</li>
+        <li class="link" ng-click="fetchFeed('feeds.feedburner.com/geeksAreSexyTechnologyNews', 'rss', 'Geeks Are Sexy')">Geeks Are Sexy</li>
+        <li class="link" ng-click="fetchFeed('www.bbc.co.uk/blogs/doctorwho/rss', 'rss', 'Doctor Who BBC')">Doctor Who BBC</li>
+        <li class="link" ng-click="fetchFeed('www.smashingmagazine.com/feed/', 'rss', 'Smashing Magazine')">Smashing Magazine</li>
+        <li class="link" ng-click="fetchFeed('feeds.feedburner.com/dailyjs', 'feed', 'Daily JS')">Daily JS</li>
+        <li class="link" ng-click="fetchFeed('feeds.feedburner.com/debuggable', 'rss', 'Debuggable')">Debuggable</li>
+        <li class="link" ng-click="fetchFeed('feeds.feedburner.com/nettuts', 'feed', 'Nettuts')">Nettuts</li>
+        <li class="link" ng-click="fetchFeed('feeds.feedburner.com/alistapart/main', 'rss', 'A List Apart')">A List Apart</li>
+        <li class="link" ng-click="fetchFeed('feeds.feedblitz.com/scotch_io', 'rss', 'Scotch')">Scotch</li>
+    </ul>
+</div>
 
-    <!-- Todos list -->
-    <div ui-sortable ng-model="todos">
-        <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
-            <input type="text" ng-model="todo" class="form-control">
-            <span class="input-group-btn">
-              <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
-            </span>
-        </p>
+<div class="wrapper">
+    <div class="content">
+        <ul class="articles">
+            <li ng-repeat="item in stories">
+                <a class="title" target="_blank" href="{{ item.link }}">{{ item.title }}</a>
+                <!--TODO: Add support for different dates and descriptions (RSS vs Atom)-->
+                <div class="articleContent"><span class="date">{{ item.pubDate }}</span><br/>
+                    <p class="description">Beskrivelse</p>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
