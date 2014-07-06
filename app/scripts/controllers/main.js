@@ -18,6 +18,10 @@ angular.module('rssFeedApp')
         }
 
         $scope.fetchFeed = function(feed, type, title) {
+            type = type || 'rss';
+            title = title || 'VG';
+            feed = feed || 'www.vg.no/rss/feed/forsiden/';
+
             $scope.stories = [];
 
             var articles = [];
@@ -34,9 +38,9 @@ angular.module('rssFeedApp')
                 success(function(data) {
                     $scope.title = title;
 
-                    if(type == 'rss'){
+                    if(type === 'rss'){
                         articles = data.query.results.rss.channel.item;
-                    }else if(type == 'feed'){
+                    }else if(type === 'feed'){
                         articles = data.query.results.feed.entry;
                     }
                     addStories(articles);
@@ -46,5 +50,5 @@ angular.module('rssFeedApp')
                 });
         };
 
-        $scope.fetchFeed('www.vg.no/rss/feed/forsiden/', 'rss', 'VG');
+        $scope.fetchFeed();
     });

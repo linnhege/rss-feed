@@ -1,18 +1,9 @@
 <div class="header">
-    <a href="#" class="nav-slide-btn">
-        <span>
-            Meny
-        </span>
-    </a>
     <h1>{{ title }}</h1>
 </div>
+
 <div class="nav">
     <!--TODO: Fix responsive menu-->
-    <a href="#" class="nav-slide-btn">
-        <span>
-            Lukk
-        </span>
-    </a>
     <ul>
         <!--TODO: Look at options for dynamic content. Maybe MongoDB?-->
         <li class="link" ng-click="fetchFeed('http://www.vg.no/rss/feed/forsiden/', 'rss', 'VG')">VG</li>
@@ -37,6 +28,7 @@
             <li ng-repeat="item in stories">
                 <a class="title" target="_blank" href="{{ item.link }}">{{ item.title }}</a>
                 <!--TODO: Add support for different dates and descriptions (RSS vs Atom)-->
+                <!--TODO: Change date formatting-->
                 <div class="articleContent"><span class="date">{{ item.pubDate }}</span><br/>
                     <p class="description">Beskrivelse</p>
                 </div>

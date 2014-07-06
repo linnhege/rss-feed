@@ -60,7 +60,6 @@ h2 {
     position: fixed;
     width: 20%;
     z-index: 5;
-    transition:all 400ms ease;
     overflow: auto;
 }
 .nav ul li {
@@ -76,26 +75,10 @@ h2 {
 }
 .nav ul li:hover {
     background-color: #3D3D3D;
-    transition: all 500ms ease;
 }
 .nav ul li.link {
     cursor: pointer;
 }
-
-.home-link {
-    position:relative;
-    display:block;
-    margin-top: 1.8em;
-}
-.home-link img{
-    width: 106%;
-    margin:0;
-}
-
-.nav-slide-btn {
-    display: none;
-}
-
 /*######## Articles styling ########*/
 
 .updated {
@@ -117,30 +100,9 @@ a.title {
     margin-top: 10px;
     width: 78%;
 }
-.thumb {
-    float: none;
-    margin: 0;
-    width: 100%;
-}
 div.description {
     display: none;
 }
-.embed {
-    float: left;
-    margin: 10px 2% 0 0;
-    width: 20%;
-}
-.embed a {
-    display: none;
-}
-.embed a.provider {
-    display: none;
-}
-.embed a:hover {
-    color: #7c0904;
-    text-decoration: underline;
-}
-
 span.date {
     color: #888888;
     font-size: 12px;
@@ -178,108 +140,4 @@ span.date {
 }
 .content li:last-child {
     border-bottom: medium none;
-}
-
-/*######## Error styling ########*/
-
-.error {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 160px;
-}
-.error li{
-    list-style-position: outside;
-    list-style-type: circle;
-}
-
-/*######## Mobile styling ########*/
-
-@media (max-width: 767px) {
-    .wrapper {
-        margin: 0;
-        width: 100%;
-    }
-    .content ul {
-        padding: 0;
-    }
-    .updated {
-        margin-bottom: 20px;
-        margin-left: 20px;
-        width: auto;
-        float: none;
-    }
-    .header{
-        margin: 0;
-        width: 100%;
-    }
-    .header h1 {
-        margin: 43px 20px;
-    }
-    h2 {
-        margin: 20px 20px 0;
-    }
-    .header .nav-slide-btn {
-        background:  url('../images/navButton.png') no-repeat;
-        background:  none, url('../images/navButton.svg') no-repeat, url('../images/navButton.png') no-repeat;
-        background-position:left top;
-        display: inline;
-        float: right;
-        margin-right: 43px;
-        margin-top: 35px;
-        padding: 22px 0 14px;
-        width: 54px;
-    }
-    .nav {
-        float: right;
-        right: -80%;
-        top: 0;
-        transition: all 400ms ease 0s;
-        width: 80%;
-    }
-    .nav ul {
-        margin: 80px 0 0;
-        padding: 0;
-    }
-    .nav img {
-        display: none;
-    }
-    .home-link {
-        display: none;
-    }
-    .nav .nav-slide-btn {
-        background:  url('../images/navButtonClose.png') no-repeat;
-        background:  none, url('../images/navButtonClose.svg') no-repeat, url('../images/navButtonClose.png') no-repeat;
-        background-position:left top;
-        display: inline;
-        float: left;
-        margin-left: 30px;
-        margin-top: 30px;
-        margin-bottom: 60px;
-        padding: 5px 0 14px;
-        width: 100%;
-        position: absolute;
-    }
-    .nav-slide-btn span{
-        visibility: hidden;
-    }
-    .menutransition {
-        right: 0 !important;
-    }
-}
-@media (max-width: 480px) {
-    .embed {
-        margin: 20px 0 0;
-        width: 100%;
-    }
-    .articleContent {
-        width: 100%;
-    }
-    .content li {
-        padding: 20px 10%;
-    }
-    a.title {
-        float: left;
-        width: 100%;
-    }
-
 }

@@ -18,9 +18,8 @@ describe('Controller: MainCtrl', function() {
         });
     }));
 
-    it('should have a list of feeds', function() {
-        expect(scope.feeds.length).toBe(1);
+    it('should return article title', function() {
         httpBackend.flush();
-        expect(scope.feeds[0].items[0].title).toBe('Node Roundup: 0.11.2, 0.10.6, subscribe, Omelette');
+        expect(scope.stories[0].title).toBe('Bilfører siktet for uaktsomt drap');
     });
 });
